@@ -21,7 +21,7 @@ public:
     virtual std::string fly() = 0;
 };
 
-class ItFlys : Flys
+class ItFlys : public Flys
 {
 public:
     virtual ~ItFlys() = default;
@@ -33,7 +33,7 @@ public:
 };
 
 
-class CantFly : Flys
+class CantFly : public Flys
 {
 public:
     virtual ~CantFly() = default;

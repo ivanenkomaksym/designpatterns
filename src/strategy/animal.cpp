@@ -69,10 +69,10 @@ m_sound = sound;
 
 std::string Animal::tryToFly() const
 {
-return m_flys.fly();
+return m_flys->fly();
 }
 
 void Animal::setFlyingAbility(std::unique_ptr<Flys> newFlyingType)
 {
-m_flys = std::move(newFlyType);
+m_flys = std::move(newFlyingType);
 }

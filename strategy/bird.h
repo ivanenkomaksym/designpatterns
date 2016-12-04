@@ -5,6 +5,7 @@
 
 class Bird : public Animal
 {
+public:
     explicit Bird();
     virtual ~Bird() = default;
 };

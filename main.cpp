@@ -1,9 +1,11 @@
 #include <iostream>
 
+#include "strategy/strategy.h"
+
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-    cout << "Hello World!" << endl;
+    strategyPattern();
     return 0;
 }

@@ -1,6 +1,9 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
+#include <memory>
+#include <string>
+
 class Flys;
 
 class Animal
@@ -28,7 +31,7 @@ public:
     void setSound(const std::string &sound);
 
     std::string tryToFly() const;
-    void setFlyingAbility(std::unique_ptr<Flys> newFlyType);
+    void setFlyingAbility(std::unique_ptr<Flys> newFlyingType);
 
 protected:
     // Instead of using an interface in a traditional way
@@ -54,6 +57,6 @@ private:
     std::string m_favFood;
     double      m_speed;
     std::string m_sound;
-}
+};
 
-#endif ANIMAL_H
+#endif // ANIMAL_H
