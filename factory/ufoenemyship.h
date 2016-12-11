@@ -1,0 +1,4 @@
+#ifndef UFOENEMYSHIP_H
+#define UFOENEMYSHIP_H
+
+#endif // UFOENEMYSHIP_H
