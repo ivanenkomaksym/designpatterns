@@ -10,7 +10,9 @@ SOURCES += main.cpp \
     src/observer/stockgrabber.cpp \
     src/observer/stockobserver.cpp \
     src/factory/enemyship.cpp \
-    src/factory/enemyshipfactory.cpp
+    src/factory/enemyshipfactory.cpp \
+    src/abstractfactory/absfact_enemyshipbuilding.cpp \
+    src/abstractfactory/absfact_ufoenemyshipbuilding.cpp
 
 DISTFILES += \
     .gitignore \
@@ -34,4 +36,20 @@ HEADERS += \
     factory/ufoenemyship.h \
     factory/rocketenemyship.h \
     factory/bigufoenemyship.h \
-    factory/enemyshipfactory.h
+    factory/enemyshipfactory.h \
+    factory/shiptype.h \
+    abstractfactory/absfact_baseenemyship.h \
+    abstractfactory/absfact_abstractfactory.h \
+    abstractfactory/absfact_enemyshipbuilding.h \
+    abstractfactory/absfact_enemyshipfactory.h \
+    abstractfactory/absfact_esengine.h \
+    abstractfactory/absfact_esufobossengine.h \
+    abstractfactory/absfact_esufobossgun.h \
+    abstractfactory/absfact_esufoengine.h \
+    abstractfactory/absfact_esufogun.h \
+    abstractfactory/absfact_esweapon.h \
+    abstractfactory/absfact_ufobossenemyship.h \
+    abstractfactory/absfact_ufobossenemyshipfactory.h \
+    abstractfactory/absfact_ufoenemyship.h \
+    abstractfactory/absfact_ufoenemyshipbuilding.h \
+    abstractfactory/absfact_ufoenemyshipfactory.h

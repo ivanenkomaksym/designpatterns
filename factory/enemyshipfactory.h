@@ -1,17 +1,11 @@
 #ifndef ENEMYSHIPFACTORY_H
 #define ENEMYSHIPFACTORY_H
 
+#include "shiptype.h"
+
 #include <memory>
 
 class EnemyShip;
-
-enum class ShipType
-{
-    DEFAULT,
-    ROCKET,
-    UFO,
-    BIGUFO
-};
 
 class EnemyShipFactory
 {

@@ -7,7 +7,7 @@ class EnemyShip
 {
 public:
     explicit EnemyShip() = default;
-    ~EnemyShip() = default;
+    virtual ~EnemyShip() = default;
 
     std::string name() const;
     void setName(const std::string &name);
