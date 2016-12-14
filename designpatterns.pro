@@ -12,7 +12,8 @@ SOURCES += main.cpp \
     src/factory/enemyship.cpp \
     src/factory/enemyshipfactory.cpp \
     src/abstractfactory/absfact_enemyshipbuilding.cpp \
-    src/abstractfactory/absfact_ufoenemyshipbuilding.cpp
+    src/abstractfactory/absfact_ufoenemyshipbuilding.cpp \
+    src/singleton/singleton.cpp
 
 DISTFILES += \
     .gitignore \
@@ -52,4 +53,6 @@ HEADERS += \
     abstractfactory/absfact_ufobossenemyshipfactory.h \
     abstractfactory/absfact_ufoenemyship.h \
     abstractfactory/absfact_ufoenemyshipbuilding.h \
-    abstractfactory/absfact_ufoenemyshipfactory.h
+    abstractfactory/absfact_ufoenemyshipfactory.h \
+    singleton/singleton.h \
+    singleton/singletonpattern.h
