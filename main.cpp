@@ -5,6 +5,7 @@
 #include "factory/factory.h"
 #include "abstractfactory/absfact_abstractfactory.h"
 #include "singleton/singletonpattern.h"
+#include "builder/builder.h"
 
 using namespace std;
 
@@ -15,5 +16,6 @@ int main(int argc, char *argv[])
     factorypattern();
     abstractfactorypattern();
     singletonpattern();
+    builderPattern();
     return 0;
 }
