@@ -17,7 +17,11 @@ SOURCES += main.cpp \
     src/builder/oldrobotbuilder.cpp \
     src/builder/robotengineer.cpp \
     src/prototype/sheep.cpp \
-    src/prototype/clonefactory.cpp
+    src/prototype/clonefactory.cpp \
+    src/decorator/plainpizza.cpp \
+    src/decorator/toppingdecorator.cpp \
+    src/decorator/mozzarella.cpp \
+    src/decorator/tomatosauce.cpp
 
 DISTFILES += \
     .gitignore \
@@ -25,7 +29,8 @@ DISTFILES += \
     observer/observer_uml.jpg \
     factory/factory_uml.jpg \
     abstractfactory/abstractfactory_uml.jpg \
-    builder/builder_uml.jpg
+    builder/builder_uml.jpg \
+    prototype/prototype_uml.jpg
 
 HEADERS += \
     strategy/animal.h \
@@ -71,4 +76,11 @@ HEADERS += \
     prototype/prototype.h \
     prototype/sheep.h \
     prototype/clonefactory.h \
-    prototype/ianimal.h
+    prototype/ianimal.h \
+    src/decorator/decorator.h \
+    decorator/decorator.h \
+    decorator/pizza.h \
+    decorator/plainpizza.h \
+    decorator/toppingdecorator.h \
+    decorator/mozzarella.h \
+    decorator/tomatosauce.h

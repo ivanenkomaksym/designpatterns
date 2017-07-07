@@ -7,6 +7,7 @@
 #include "singleton/singletonpattern.h"
 #include "builder/builder.h"
 #include "prototype/prototype.h"
+#include "decorator/decorator.h"
 
 using namespace std;
 
@@ -19,5 +20,6 @@ int main(int argc, char *argv[])
     singletonpattern();
     builderPattern();
     prototypePattern();
+    decoratorPattern();
     return 0;
 }
