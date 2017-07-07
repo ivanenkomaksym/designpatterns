@@ -15,13 +15,17 @@ SOURCES += main.cpp \
     src/abstractfactory/absfact_ufoenemyshipbuilding.cpp \
     src/singleton/singleton.cpp \
     src/builder/oldrobotbuilder.cpp \
-    src/builder/robotengineer.cpp
+    src/builder/robotengineer.cpp \
+    src/prototype/sheep.cpp \
+    src/prototype/clonefactory.cpp
 
 DISTFILES += \
     .gitignore \
     strategy/strategy_uml.jpg \
     observer/observer_uml.jpg \
-    factory/factory_uml.jpg
+    factory/factory_uml.jpg \
+    abstractfactory/abstractfactory_uml.jpg \
+    builder/builder_uml.jpg
 
 HEADERS += \
     strategy/animal.h \
@@ -63,4 +67,8 @@ HEADERS += \
     builder/robot.h \
     builder/robotbuilder.h \
     builder/oldrobotbuilder.h \
-    builder/robotengineer.h
+    builder/robotengineer.h \
+    prototype/prototype.h \
+    prototype/sheep.h \
+    prototype/clonefactory.h \
+    prototype/ianimal.h

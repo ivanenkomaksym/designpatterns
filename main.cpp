@@ -6,6 +6,7 @@
 #include "abstractfactory/absfact_abstractfactory.h"
 #include "singleton/singletonpattern.h"
 #include "builder/builder.h"
+#include "prototype/prototype.h"
 
 using namespace std;
 
@@ -17,5 +18,6 @@ int main(int argc, char *argv[])
     abstractfactorypattern();
     singletonpattern();
     builderPattern();
+    prototypePattern();
     return 0;
 }
