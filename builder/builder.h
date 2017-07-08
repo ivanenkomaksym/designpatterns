@@ -19,6 +19,8 @@
 
 void builderPattern()
 {
+    std::cout << "============================================================" << std::endl;
+    std::cout << "========================Builder Pattern=====================" << std::endl;
     auto oldStyleRobot = std::make_unique<OldRobotBuilder>();
     auto robotEngineer = std::make_unique<RobotEngineer>(*oldStyleRobot);
 
@@ -32,6 +34,8 @@ void builderPattern()
               << "Robot Arms Type: " << firstRobot.getRobotArms() << std::endl
               << "Robot Legs Type: " << firstRobot.getRobotLegs() << std::endl
               << std::endl;
+    std::cout << "========================Builder Pattern=====================" << std::endl;
+    std::cout << "============================================================" << std::endl;
 }
 
 #endif // BUILDER_H

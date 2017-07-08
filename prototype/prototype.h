@@ -20,6 +20,8 @@
 
 void prototypePattern()
 {
+    std::cout << "============================================================" << std::endl;
+    std::cout << "=======================Prototype Pattern====================" << std::endl;
     auto animalMaker = CloneFactory();
 
     Sheep sally;
@@ -30,6 +32,8 @@ void prototypePattern()
     std::cout << "Clone pointer: " << clonedSheep << std::endl;
 
     delete clonedSheep;
+    std::cout << "=======================Prototype Pattern====================" << std::endl;
+    std::cout << "============================================================" << std::endl;
 }
 
 #endif // PROTOTYPE_H

@@ -34,6 +34,8 @@
 
 void bridgePattern()
 {
+    std::cout << "============================================================" << std::endl;
+    std::cout << "========================Bridge Pattern======================" << std::endl;
     TVDevice tvDevice(1, 200);
     auto theTV = std::make_unique<TVRemoteMute>(tvDevice);
     auto theTV2 = std::make_unique<TVRemotePause>(tvDevice);
@@ -60,6 +62,8 @@ void bridgePattern()
     theDVD->buttonNinePressed();
     theDVD->buttonNinePressed();
     std::cout << std::endl;
+    std::cout << "========================Bridge Pattern======================" << std::endl;
+    std::cout << "============================================================" << std::endl;
 }
 
 #endif // BRIDGE_H

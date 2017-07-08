@@ -25,6 +25,8 @@
 
 void strategyPattern()
 {
+    std::cout << "============================================================" << std::endl;
+    std::cout << "======================Strategy Pattern======================" << std::endl;
     std::unique_ptr<Animal> sparky = std::make_unique<Dog>();
     std::unique_ptr<Animal> tweety = std::make_unique<Bird>();
 
@@ -34,6 +36,8 @@ void strategyPattern()
     sparky->setFlyingAbility(std::make_unique<ItFlys>());
 
     std::cout << "Dog: " << sparky->tryToFly() << std::endl;
+    std::cout << "======================Strategy Pattern======================" << std::endl;
+    std::cout << "============================================================" << std::endl;
 }
 
 #endif // STRATEGY_H

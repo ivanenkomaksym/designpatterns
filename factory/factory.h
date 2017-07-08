@@ -27,6 +27,8 @@ void doStuffEnemy(EnemyShip &enemyShip);
 
 void factorypattern()
 {
+    std::cout << "============================================================" << std::endl;
+    std::cout << "======================Factory Pattern=======================" << std::endl;
     auto enemy = std::unique_ptr<EnemyShip>();
 
 //    auto enemyShipOption = std::string();
@@ -55,6 +57,8 @@ void factorypattern()
 
     if (enemy.get())
         doStuffEnemy(*enemy);
+    std::cout << "======================Factory Pattern=======================" << std::endl;
+    std::cout << "============================================================" << std::endl;
 }
 
 void doStuffEnemy(EnemyShip &enemyShip)

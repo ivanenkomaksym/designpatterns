@@ -23,6 +23,8 @@
 
 void adapterPattern()
 {
+    std::cout << "============================================================" << std::endl;
+    std::cout << "========================Adapter Pattern=====================" << std::endl;
     EnemyTank rx7Tank;
     EnemyRobot fredTheRobot;
     EnemyRobotAdapter robotAdapter(fredTheRobot);
@@ -41,6 +43,8 @@ void adapterPattern()
     robotAdapter.assignDriver("Mark");
     robotAdapter.driveForward();
     robotAdapter.fireWeapon();
+    std::cout << "========================Adapter Pattern=====================" << std::endl;
+    std::cout << "============================================================" << std::endl;
 }
 
 #endif // ADAPTER_H

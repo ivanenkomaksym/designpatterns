@@ -51,11 +51,15 @@ void run()
 
 void singletonpattern()
 {
+    std::cout << "============================================================" << std::endl;
+    std::cout << "=======================Singleton Pattern====================" << std::endl;
     std::thread t1(run);
     std::thread t2(run);
 
     t1.join();
     t2.join();
+    std::cout << "=======================Singleton Pattern====================" << std::endl;
+    std::cout << "============================================================" << std::endl;
 }
 
 #endif // SINGLETONPATTERN_H

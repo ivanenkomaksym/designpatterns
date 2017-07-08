@@ -21,6 +21,8 @@
 
 void observerPattern()
 {
+    std::cout << "============================================================" << std::endl;
+    std::cout << "======================Observer Pattern======================" << std::endl;
     auto stockGrabber = StockGrabber();
 
     auto observer1 = StockObserver(stockGrabber);
@@ -40,6 +42,8 @@ void observerPattern()
     stockGrabber.setIBMPrice(197.00);
     stockGrabber.setAAPLPrice(677.60);
     stockGrabber.setGOOGPrice(676.40);
+    std::cout << "======================Observer Pattern======================" << std::endl;
+    std::cout << "============================================================" << std::endl;
 }
 
 #endif // OBSERVERPATTERN_H
