@@ -9,6 +9,7 @@
 #include "prototype/prototype.h"
 #include "decorator/decorator.h"
 #include "adapter/adapter.h"
+#include "bridge/bridge.h"
 
 using namespace std;
 
@@ -23,5 +24,6 @@ int main(int argc, char *argv[])
     prototypePattern();
     decoratorPattern();
     adapterPattern();
+    bridgePattern();
     return 0;
 }

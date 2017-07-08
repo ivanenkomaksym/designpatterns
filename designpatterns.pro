@@ -24,7 +24,14 @@ SOURCES += main.cpp \
     src/decorator/tomatosauce.cpp \
     src/adapter/enemytank.cpp \
     src/adapter/enemyrobot.cpp \
-    src/adapter/enemyrobotadapter.cpp
+    src/adapter/enemyrobotadapter.cpp \
+    src/bridge/entertainmentdevice.cpp \
+    src/bridge/tvdevice.cpp \
+    src/bridge/remotebutton.cpp \
+    src/bridge/tvremotemute.cpp \
+    src/bridge/tvremotepause.cpp \
+    src/bridge/dvddevice.cpp \
+    src/bridge/dvdremote.cpp
 
 DISTFILES += \
     .gitignore \
@@ -34,7 +41,8 @@ DISTFILES += \
     abstractfactory/abstractfactory_uml.jpg \
     builder/builder_uml.jpg \
     prototype/prototype_uml.jpg \
-    decorator/decorator_uml.jpg
+    decorator/decorator_uml.jpg \
+    adapter/adapter_uml.jpg
 
 HEADERS += \
     strategy/animal.h \
@@ -92,4 +100,12 @@ HEADERS += \
     adapter/enemyattacker.h \
     adapter/enemytank.h \
     adapter/enemyrobot.h \
-    adapter/enemyrobotadapter.h
+    adapter/enemyrobotadapter.h \
+    bridge/bridge.h \
+    bridge/entertainmentdevice.h \
+    bridge/tvdevice.h \
+    bridge/remotebutton.h \
+    bridge/tvremotemute.h \
+    bridge/tvremotepause.h \
+    bridge/dvddevice.h \
+    bridge/dvdremote.h
