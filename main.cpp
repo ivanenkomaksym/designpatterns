@@ -8,6 +8,7 @@
 #include "builder/builder.h"
 #include "prototype/prototype.h"
 #include "decorator/decorator.h"
+#include "adapter/adapter.h"
 
 using namespace std;
 
@@ -21,5 +22,6 @@ int main(int argc, char *argv[])
     builderPattern();
     prototypePattern();
     decoratorPattern();
+    adapterPattern();
     return 0;
 }

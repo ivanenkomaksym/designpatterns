@@ -21,7 +21,10 @@ SOURCES += main.cpp \
     src/decorator/plainpizza.cpp \
     src/decorator/toppingdecorator.cpp \
     src/decorator/mozzarella.cpp \
-    src/decorator/tomatosauce.cpp
+    src/decorator/tomatosauce.cpp \
+    src/adapter/enemytank.cpp \
+    src/adapter/enemyrobot.cpp \
+    src/adapter/enemyrobotadapter.cpp
 
 DISTFILES += \
     .gitignore \
@@ -30,7 +33,8 @@ DISTFILES += \
     factory/factory_uml.jpg \
     abstractfactory/abstractfactory_uml.jpg \
     builder/builder_uml.jpg \
-    prototype/prototype_uml.jpg
+    prototype/prototype_uml.jpg \
+    decorator/decorator_uml.jpg
 
 HEADERS += \
     strategy/animal.h \
@@ -83,4 +87,9 @@ HEADERS += \
     decorator/plainpizza.h \
     decorator/toppingdecorator.h \
     decorator/mozzarella.h \
-    decorator/tomatosauce.h
+    decorator/tomatosauce.h \
+    adapter/adapter.h \
+    adapter/enemyattacker.h \
+    adapter/enemytank.h \
+    adapter/enemyrobot.h \
+    adapter/enemyrobotadapter.h
