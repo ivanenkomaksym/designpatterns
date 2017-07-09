@@ -11,8 +11,7 @@
 #include "adapter/adapter.h"
 #include "bridge/bridge.h"
 #include "templatemethod/templatemethod.h"
-
-using namespace std;
+#include "iterator/iterator.h"
 
 int main(int argc, char *argv[])
 {
@@ -27,5 +26,6 @@ int main(int argc, char *argv[])
     adapterPattern();
     bridgePattern();
     templateMethodPattern();
+    iteratorPattern();
     return 0;
 }

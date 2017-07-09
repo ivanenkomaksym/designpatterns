@@ -34,7 +34,12 @@ SOURCES += main.cpp \
     src/bridge/dvdremote.cpp \
     src/templatemethod/hoagie.cpp \
     src/templatemethod/italianhoagie.cpp \
-    src/templatemethod/veggiehoagie.cpp
+    src/templatemethod/veggiehoagie.cpp \
+    src/iterator/songinfo.cpp \
+    src/iterator/songsofthe70s.cpp \
+    src/iterator/songsofthe80s.cpp \
+    src/iterator/songsofthe90s.cpp \
+    src/iterator/diskjokey.cpp
 
 DISTFILES += \
     .gitignore \
@@ -118,4 +123,11 @@ HEADERS += \
     templatemethod/templatemethod.h \
     templatemethod/italianhoagie.h \
     templatemethod/hoagie.h \
-    templatemethod/veggiehoagie.h
+    templatemethod/veggiehoagie.h \
+    iterator/iterator.h \
+    iterator/songinfo.h \
+    iterator/songsofthe70s.h \
+    iterator/songsofthe80s.h \
+    iterator/songsofthe90s.h \
+    iterator/diskjokey.h \
+    iterator/songiterator.h
