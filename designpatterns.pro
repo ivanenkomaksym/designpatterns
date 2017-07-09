@@ -31,7 +31,10 @@ SOURCES += main.cpp \
     src/bridge/tvremotemute.cpp \
     src/bridge/tvremotepause.cpp \
     src/bridge/dvddevice.cpp \
-    src/bridge/dvdremote.cpp
+    src/bridge/dvdremote.cpp \
+    src/templatemethod/hoagie.cpp \
+    src/templatemethod/italianhoagie.cpp \
+    src/templatemethod/veggiehoagie.cpp
 
 DISTFILES += \
     .gitignore \
@@ -42,7 +45,10 @@ DISTFILES += \
     builder/builder_uml.jpg \
     prototype/prototype_uml.jpg \
     decorator/decorator_uml.jpg \
-    adapter/adapter_uml.jpg
+    adapter/adapter_uml.jpg \
+    bridge/bridge_uml.jpg \
+    templatemethod/New Text Document.txt \
+    templatemethod/templatemethod_uml.jpg
 
 HEADERS += \
     strategy/animal.h \
@@ -108,4 +114,8 @@ HEADERS += \
     bridge/tvremotemute.h \
     bridge/tvremotepause.h \
     bridge/dvddevice.h \
-    bridge/dvdremote.h
+    bridge/dvdremote.h \
+    templatemethod/templatemethod.h \
+    templatemethod/italianhoagie.h \
+    templatemethod/hoagie.h \
+    templatemethod/veggiehoagie.h

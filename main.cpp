@@ -10,6 +10,7 @@
 #include "decorator/decorator.h"
 #include "adapter/adapter.h"
 #include "bridge/bridge.h"
+#include "templatemethod/templatemethod.h"
 
 using namespace std;
 
@@ -25,5 +26,6 @@ int main(int argc, char *argv[])
     decoratorPattern();
     adapterPattern();
     bridgePattern();
+    templateMethodPattern();
     return 0;
 }
