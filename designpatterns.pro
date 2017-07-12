@@ -1,5 +1,6 @@
 TEMPLATE = app
 CONFIG += console c++14
+CONFIG += debug
 CONFIG -= app_bundle
 CONFIG -= qt
 
@@ -39,7 +40,16 @@ SOURCES += main.cpp \
     src/iterator/songsofthe70s.cpp \
     src/iterator/songsofthe80s.cpp \
     src/iterator/songsofthe90s.cpp \
-    src/iterator/diskjokey.cpp
+    src/iterator/diskjokey.cpp \
+    src/composite/songcomponent.cpp \
+    src/composite/songgroup.cpp \
+    src/composite/song.cpp \
+    src/composite/compositediskjokey.cpp \
+    src/state/atmmachine.cpp \
+    src/state/hascard.cpp \
+    src/state/nocard.cpp \
+    src/state/haspin.cpp \
+    src/state/nocash.cpp
 
 DISTFILES += \
     .gitignore \
@@ -53,7 +63,9 @@ DISTFILES += \
     adapter/adapter_uml.jpg \
     bridge/bridge_uml.jpg \
     templatemethod/New Text Document.txt \
-    templatemethod/templatemethod_uml.jpg
+    templatemethod/templatemethod_uml.jpg \
+    composite/composite_uml.jpg \
+    state/state_uml.jpg
 
 HEADERS += \
     strategy/animal.h \
@@ -130,4 +142,16 @@ HEADERS += \
     iterator/songsofthe80s.h \
     iterator/songsofthe90s.h \
     iterator/diskjokey.h \
-    iterator/songiterator.h
+    iterator/songiterator.h \
+    composite/composite.h \
+    composite/songcomponent.h \
+    composite/songgroup.h \
+    composite/song.h \
+    composite/compositediskjokey.h \
+    state/state.h \
+    state/atmstate.h \
+    state/atmmachine.h \
+    state/hascard.h \
+    state/nocard.h \
+    state/haspin.h \
+    state/nocash.h
