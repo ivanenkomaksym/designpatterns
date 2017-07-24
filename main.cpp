@@ -12,6 +12,7 @@
 #include "bridge/bridge.h"
 #include "templatemethod/templatemethod.h"
 #include "iterator/iterator.h"
+#include "facade/facade.h"
 
 int main(int argc, char *argv[])
 {
@@ -27,5 +28,6 @@ int main(int argc, char *argv[])
     bridgePattern();
     templateMethodPattern();
     iteratorPattern();
+    facadePattern();
     return 0;
 }

@@ -39,7 +39,8 @@ SOURCES += main.cpp \
     src/iterator/songsofthe70s.cpp \
     src/iterator/songsofthe80s.cpp \
     src/iterator/songsofthe90s.cpp \
-    src/iterator/diskjokey.cpp
+    src/iterator/diskjokey.cpp \
+    src/facade/welcometobank.cpp
 
 DISTFILES += \
     .gitignore \
@@ -53,7 +54,8 @@ DISTFILES += \
     adapter/adapter_uml.jpg \
     bridge/bridge_uml.jpg \
     templatemethod/New Text Document.txt \
-    templatemethod/templatemethod_uml.jpg
+    templatemethod/templatemethod_uml.jpg \
+    .gitignore
 
 HEADERS += \
     strategy/animal.h \
@@ -130,4 +132,13 @@ HEADERS += \
     iterator/songsofthe80s.h \
     iterator/songsofthe90s.h \
     iterator/diskjokey.h \
-    iterator/songiterator.h
+    iterator/songiterator.h \
+    facade/facade.h \
+    facade/welcometobank.h \
+    facade/accountnumbercheck.h \
+    facade/securitycodecheck.h \
+    facade/fundscheck.h \
+    facade/bankaccountfacade.h
+
+SUBDIRS += \
+    designpatterns.pro
