@@ -15,6 +15,7 @@
 #include "composite/composite.h"
 #include "state/state.h"
 #include "proxy/proxy.h"
+#include "chainofresponsibility/chainofresponsibility.h"
 
 int main(int argc, char *argv[])
 {
@@ -33,5 +34,6 @@ int main(int argc, char *argv[])
     compositePattern();
     statePattern();
     proxyPattern();
+    chainOfResponsibilityPattern();
     return 0;
 }

@@ -51,7 +51,11 @@ SOURCES += main.cpp \
     src/state/nocard.cpp \
     src/state/haspin.cpp \
     src/state/nocash.cpp \
-    src/proxy/atmproxy.cpp
+    src/proxy/atmproxy.cpp \
+    src/chainofresponsibility/addnumbers.cpp \
+    src/chainofresponsibility/subtractnumbers.cpp \
+    src/chainofresponsibility/multnumbers.cpp \
+    src/chainofresponsibility/dividenumbers.cpp
 
 DISTFILES += \
     .gitignore \
@@ -159,4 +163,11 @@ HEADERS += \
     state/nocash.h \
     proxy/proxy.h \
     proxy/getatmdata.h \
-    proxy/atmproxy.h
+    proxy/atmproxy.h \
+    chainofresponsibility/chainofresponsibility.h \
+    chainofresponsibility/chain.h \
+    chainofresponsibility/numbers.h \
+    chainofresponsibility/addnumbers.h \
+    chainofresponsibility/subtractnumbers.h \
+    chainofresponsibility/multnumbers.h \
+    chainofresponsibility/dividenumbers.h
