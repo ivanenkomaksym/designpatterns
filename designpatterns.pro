@@ -5,94 +5,31 @@ CONFIG -= app_bundle
 CONFIG -= qt
 QMAKE_CXXFLAGS += -std=c++0x
 
-SOURCES += main.cpp \
-    src/strategy/animal.cpp \
-    src/strategy/bird.cpp \
-    src/strategy/dog.cpp \
-    src/observer/stockgrabber.cpp \
-    src/observer/stockobserver.cpp \
-    src/factory/enemyship.cpp \
-    src/factory/enemyshipfactory.cpp \
-    src/abstractfactory/absfact_enemyshipbuilding.cpp \
-    src/abstractfactory/absfact_ufoenemyshipbuilding.cpp \
-    src/singleton/singleton.cpp \
-    src/builder/oldrobotbuilder.cpp \
-    src/builder/robotengineer.cpp \
-    src/prototype/sheep.cpp \
-    src/prototype/clonefactory.cpp \
-    src/decorator/plainpizza.cpp \
-    src/decorator/toppingdecorator.cpp \
-    src/decorator/mozzarella.cpp \
-    src/decorator/tomatosauce.cpp \
-    src/adapter/enemytank.cpp \
-    src/adapter/enemyrobot.cpp \
-    src/adapter/enemyrobotadapter.cpp \
-    src/bridge/entertainmentdevice.cpp \
-    src/bridge/tvdevice.cpp \
-    src/bridge/remotebutton.cpp \
-    src/bridge/tvremotemute.cpp \
-    src/bridge/tvremotepause.cpp \
-    src/bridge/dvddevice.cpp \
-    src/bridge/dvdremote.cpp \
-    src/templatemethod/hoagie.cpp \
-    src/templatemethod/italianhoagie.cpp \
-    src/templatemethod/veggiehoagie.cpp \
-    src/iterator/songinfo.cpp \
-    src/iterator/songsofthe70s.cpp \
-    src/iterator/songsofthe80s.cpp \
-    src/iterator/songsofthe90s.cpp \
-    src/iterator/diskjokey.cpp \
-    src/composite/songcomponent.cpp \
-    src/composite/songgroup.cpp \
-    src/composite/song.cpp \
-    src/composite/compositediskjokey.cpp \
-    src/state/atmmachine.cpp \
-    src/state/hascard.cpp \
-    src/state/nocard.cpp \
-    src/state/haspin.cpp \
-    src/state/nocash.cpp \
-    src/proxy/atmproxy.cpp \
-    src/chainofresponsibility/addnumbers.cpp \
-    src/chainofresponsibility/subtractnumbers.cpp \
-    src/chainofresponsibility/multnumbers.cpp \
-    src/chainofresponsibility/dividenumbers.cpp
+
+SUBDIRS += \
+    designpatterns.pro \
+    designpatterns.pro
 
 DISTFILES += \
-    .gitignore \
-    strategy/strategy_uml.jpg \
-    observer/observer_uml.jpg \
-    factory/factory_uml.jpg \
     abstractfactory/abstractfactory_uml.jpg \
-    builder/builder_uml.jpg \
-    prototype/prototype_uml.jpg \
-    decorator/decorator_uml.jpg \
     adapter/adapter_uml.jpg \
     bridge/bridge_uml.jpg \
-    templatemethod/New Text Document.txt \
-    templatemethod/templatemethod_uml.jpg \
+    builder/builder_uml.jpg \
+    chainofresponsibility/chainofresponsibility_uml.jpg \
     composite/composite_uml.jpg \
-    state/state_uml.jpg
+    decorator/decorator_uml.jpg \
+    factory/factory_uml.jpg \
+    observer/observer_uml.jpg \
+    prototype/prototype_uml.jpg \
+    proxy/proxy_uml.jpg \
+    state/state_uml.jpg \
+    strategy/strategy_uml.jpg \
+    templatemethod/templatemethod_uml.jpg \
+    .gitignore
 
 HEADERS += \
-    strategy/animal.h \
-    strategy/bird.h \
-    strategy/dog.h \
-    strategy/flys.h \
-    strategy/strategy.h \
-    observer/subject.h \
-    observer/observer.h \
-    observer/stockgrabber.h \
-    observer/stockobserver.h \
-    observer/observerpattern.h \
-    factory/factory.h \
-    factory/enemyship.h \
-    factory/ufoenemyship.h \
-    factory/rocketenemyship.h \
-    factory/bigufoenemyship.h \
-    factory/enemyshipfactory.h \
-    factory/shiptype.h \
-    abstractfactory/absfact_baseenemyship.h \
     abstractfactory/absfact_abstractfactory.h \
+    abstractfactory/absfact_baseenemyship.h \
     abstractfactory/absfact_enemyshipbuilding.h \
     abstractfactory/absfact_enemyshipfactory.h \
     abstractfactory/absfact_esengine.h \
@@ -106,68 +43,149 @@ HEADERS += \
     abstractfactory/absfact_ufoenemyship.h \
     abstractfactory/absfact_ufoenemyshipbuilding.h \
     abstractfactory/absfact_ufoenemyshipfactory.h \
-    singleton/singleton.h \
-    singleton/singletonpattern.h \
-    builder/builder.h \
-    builder/robotplan.h \
-    builder/robot.h \
-    builder/robotbuilder.h \
-    builder/oldrobotbuilder.h \
-    builder/robotengineer.h \
-    prototype/prototype.h \
-    prototype/sheep.h \
-    prototype/clonefactory.h \
-    prototype/ianimal.h \
-    src/decorator/decorator.h \
-    decorator/decorator.h \
-    decorator/pizza.h \
-    decorator/plainpizza.h \
-    decorator/toppingdecorator.h \
-    decorator/mozzarella.h \
-    decorator/tomatosauce.h \
     adapter/adapter.h \
     adapter/enemyattacker.h \
-    adapter/enemytank.h \
     adapter/enemyrobot.h \
     adapter/enemyrobotadapter.h \
+    adapter/enemytank.h \
     bridge/bridge.h \
-    bridge/entertainmentdevice.h \
-    bridge/tvdevice.h \
-    bridge/remotebutton.h \
-    bridge/tvremotemute.h \
-    bridge/tvremotepause.h \
     bridge/dvddevice.h \
     bridge/dvdremote.h \
-    templatemethod/templatemethod.h \
-    templatemethod/italianhoagie.h \
-    templatemethod/hoagie.h \
-    templatemethod/veggiehoagie.h \
+    bridge/entertainmentdevice.h \
+    bridge/remotebutton.h \
+    bridge/tvdevice.h \
+    bridge/tvremotemute.h \
+    bridge/tvremotepause.h \
+    builder/builder.h \
+    builder/oldrobotbuilder.h \
+    builder/robot.h \
+    builder/robotbuilder.h \
+    builder/robotengineer.h \
+    builder/robotplan.h \
+    chainofresponsibility/addnumbers.h \
+    chainofresponsibility/chain.h \
+    chainofresponsibility/chainofresponsibility.h \
+    chainofresponsibility/dividenumbers.h \
+    chainofresponsibility/multnumbers.h \
+    chainofresponsibility/numbers.h \
+    chainofresponsibility/subtractnumbers.h \
+    composite/composite.h \
+    composite/compositediskjokey.h \
+    composite/song.h \
+    composite/songcomponent.h \
+    composite/songgroup.h \
+    decorator/decorator.h \
+    decorator/mozzarella.h \
+    decorator/pizza.h \
+    decorator/plainpizza.h \
+    decorator/tomatosauce.h \
+    decorator/toppingdecorator.h \
+    facade/accountnumbercheck.h \
+    facade/bankaccountfacade.h \
+    facade/facade.h \
+    facade/fundscheck.h \
+    facade/securitycodecheck.h \
+    facade/welcometobank.h \
+    factory/bigufoenemyship.h \
+    factory/enemyship.h \
+    factory/enemyshipfactory.h \
+    factory/factory.h \
+    factory/rocketenemyship.h \
+    factory/shiptype.h \
+    factory/ufoenemyship.h \
+    flyweight/flyweight.h \
+    flyweight/flyweighttest.h \
+    flyweight/myrect.h \
+    flyweight/myrect2.h \
+    flyweight/rectfactory.h \
+    iterator/diskjokey.h \
     iterator/iterator.h \
     iterator/songinfo.h \
+    iterator/songiterator.h \
     iterator/songsofthe70s.h \
     iterator/songsofthe80s.h \
     iterator/songsofthe90s.h \
-    iterator/diskjokey.h \
-    iterator/songiterator.h \
-    composite/composite.h \
-    composite/songcomponent.h \
-    composite/songgroup.h \
-    composite/song.h \
-    composite/compositediskjokey.h \
-    state/state.h \
-    state/atmstate.h \
-    state/atmmachine.h \
-    state/hascard.h \
-    state/nocard.h \
-    state/haspin.h \
-    state/nocash.h \
-    proxy/proxy.h \
-    proxy/getatmdata.h \
+    observer/observer.h \
+    observer/observerpattern.h \
+    observer/stockgrabber.h \
+    observer/stockobserver.h \
+    observer/subject.h \
+    prototype/clonefactory.h \
+    prototype/ianimal.h \
+    prototype/prototype.h \
+    prototype/sheep.h \
     proxy/atmproxy.h \
-    chainofresponsibility/chainofresponsibility.h \
-    chainofresponsibility/chain.h \
-    chainofresponsibility/numbers.h \
-    chainofresponsibility/addnumbers.h \
-    chainofresponsibility/subtractnumbers.h \
-    chainofresponsibility/multnumbers.h \
-    chainofresponsibility/dividenumbers.h
+    proxy/getatmdata.h \
+    proxy/proxy.h \
+    singleton/singleton.h \
+    singleton/singletonpattern.h \
+    state/atmmachine.h \
+    state/atmstate.h \
+    state/hascard.h \
+    state/haspin.h \
+    state/nocard.h \
+    state/nocash.h \
+    state/state.h \
+    strategy/animal.h \
+    strategy/bird.h \
+    strategy/dog.h \
+    strategy/flys.h \
+    strategy/strategy.h \
+    templatemethod/hoagie.h \
+    templatemethod/italianhoagie.h \
+    templatemethod/templatemethod.h \
+    templatemethod/veggiehoagie.h
+
+SOURCES += \
+    src/abstractfactory/absfact_enemyshipbuilding.cpp \
+    src/abstractfactory/absfact_ufoenemyshipbuilding.cpp \
+    src/adapter/enemyrobot.cpp \
+    src/adapter/enemyrobotadapter.cpp \
+    src/adapter/enemytank.cpp \
+    src/bridge/dvddevice.cpp \
+    src/bridge/dvdremote.cpp \
+    src/bridge/entertainmentdevice.cpp \
+    src/bridge/remotebutton.cpp \
+    src/bridge/tvdevice.cpp \
+    src/bridge/tvremotemute.cpp \
+    src/bridge/tvremotepause.cpp \
+    src/builder/oldrobotbuilder.cpp \
+    src/builder/robotengineer.cpp \
+    src/chainofresponsibility/addnumbers.cpp \
+    src/chainofresponsibility/dividenumbers.cpp \
+    src/chainofresponsibility/multnumbers.cpp \
+    src/chainofresponsibility/subtractnumbers.cpp \
+    src/composite/compositediskjokey.cpp \
+    src/composite/song.cpp \
+    src/composite/songcomponent.cpp \
+    src/composite/songgroup.cpp \
+    src/decorator/mozzarella.cpp \
+    src/decorator/plainpizza.cpp \
+    src/decorator/tomatosauce.cpp \
+    src/decorator/toppingdecorator.cpp \
+    src/facade/welcometobank.cpp \
+    src/factory/enemyship.cpp \
+    src/factory/enemyshipfactory.cpp \
+    src/iterator/diskjokey.cpp \
+    src/iterator/songinfo.cpp \
+    src/iterator/songsofthe70s.cpp \
+    src/iterator/songsofthe80s.cpp \
+    src/iterator/songsofthe90s.cpp \
+    src/observer/stockgrabber.cpp \
+    src/observer/stockobserver.cpp \
+    src/prototype/clonefactory.cpp \
+    src/prototype/sheep.cpp \
+    src/proxy/atmproxy.cpp \
+    src/singleton/singleton.cpp \
+    src/state/atmmachine.cpp \
+    src/state/hascard.cpp \
+    src/state/haspin.cpp \
+    src/state/nocard.cpp \
+    src/state/nocash.cpp \
+    src/strategy/animal.cpp \
+    src/strategy/bird.cpp \
+    src/strategy/dog.cpp \
+    src/templatemethod/hoagie.cpp \
+    src/templatemethod/italianhoagie.cpp \
+    src/templatemethod/veggiehoagie.cpp \
+    main.cpp

@@ -14,6 +14,8 @@
 #include "iterator/iterator.h"
 #include "facade/facade.h"
 #include "flyweight/flyweight.h"
+#include "state/state.h"
+#include "chainofresponsibility/chainofresponsibility.h"
 
 int main(int argc, char *argv[])
 {
@@ -31,5 +33,7 @@ int main(int argc, char *argv[])
     iteratorPattern();
     facadePattern();
     flyweightPattern();
+    statePattern();
+    chainOfResponsibilityPattern();
     return 0;
 }
