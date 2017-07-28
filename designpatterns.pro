@@ -1,7 +1,9 @@
 TEMPLATE = app
 CONFIG += console c++14
+CONFIG += debug
 CONFIG -= app_bundle
 CONFIG -= qt
+QMAKE_CXXFLAGS += -std=c++0x
 
 SOURCES += main.cpp \
     src/strategy/animal.cpp \
@@ -40,7 +42,20 @@ SOURCES += main.cpp \
     src/iterator/songsofthe80s.cpp \
     src/iterator/songsofthe90s.cpp \
     src/iterator/diskjokey.cpp \
-    src/facade/welcometobank.cpp
+    src/composite/songcomponent.cpp \
+    src/composite/songgroup.cpp \
+    src/composite/song.cpp \
+    src/composite/compositediskjokey.cpp \
+    src/state/atmmachine.cpp \
+    src/state/hascard.cpp \
+    src/state/nocard.cpp \
+    src/state/haspin.cpp \
+    src/state/nocash.cpp \
+    src/proxy/atmproxy.cpp \
+    src/chainofresponsibility/addnumbers.cpp \
+    src/chainofresponsibility/subtractnumbers.cpp \
+    src/chainofresponsibility/multnumbers.cpp \
+    src/chainofresponsibility/dividenumbers.cpp
 
 DISTFILES += \
     .gitignore \
@@ -55,7 +70,8 @@ DISTFILES += \
     bridge/bridge_uml.jpg \
     templatemethod/New Text Document.txt \
     templatemethod/templatemethod_uml.jpg \
-    .gitignore
+    composite/composite_uml.jpg \
+    state/state_uml.jpg
 
 HEADERS += \
     strategy/animal.h \
@@ -133,17 +149,25 @@ HEADERS += \
     iterator/songsofthe90s.h \
     iterator/diskjokey.h \
     iterator/songiterator.h \
-    facade/facade.h \
-    facade/welcometobank.h \
-    facade/accountnumbercheck.h \
-    facade/securitycodecheck.h \
-    facade/fundscheck.h \
-    facade/bankaccountfacade.h \
-    flyweight/flyweight.h \
-    flyweight/myrect.h \
-    flyweight/flyweighttest.h \
-    flyweight/myrect2.h \
-    flyweight/rectfactory.h
-
-SUBDIRS += \
-    designpatterns.pro
+    composite/composite.h \
+    composite/songcomponent.h \
+    composite/songgroup.h \
+    composite/song.h \
+    composite/compositediskjokey.h \
+    state/state.h \
+    state/atmstate.h \
+    state/atmmachine.h \
+    state/hascard.h \
+    state/nocard.h \
+    state/haspin.h \
+    state/nocash.h \
+    proxy/proxy.h \
+    proxy/getatmdata.h \
+    proxy/atmproxy.h \
+    chainofresponsibility/chainofresponsibility.h \
+    chainofresponsibility/chain.h \
+    chainofresponsibility/numbers.h \
+    chainofresponsibility/addnumbers.h \
+    chainofresponsibility/subtractnumbers.h \
+    chainofresponsibility/multnumbers.h \
+    chainofresponsibility/dividenumbers.h
