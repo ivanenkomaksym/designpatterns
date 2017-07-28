@@ -138,7 +138,12 @@ HEADERS += \
     facade/accountnumbercheck.h \
     facade/securitycodecheck.h \
     facade/fundscheck.h \
-    facade/bankaccountfacade.h
+    facade/bankaccountfacade.h \
+    flyweight/flyweight.h \
+    flyweight/myrect.h \
+    flyweight/flyweighttest.h \
+    flyweight/myrect2.h \
+    flyweight/rectfactory.h
 
 SUBDIRS += \
     designpatterns.pro

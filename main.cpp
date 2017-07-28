@@ -13,6 +13,7 @@
 #include "templatemethod/templatemethod.h"
 #include "iterator/iterator.h"
 #include "facade/facade.h"
+#include "flyweight/flyweight.h"
 
 int main(int argc, char *argv[])
 {
@@ -29,5 +30,6 @@ int main(int argc, char *argv[])
     templateMethodPattern();
     iteratorPattern();
     facadePattern();
+    flyweightPattern();
     return 0;
 }
