@@ -28,3 +28,8 @@ void NoCash::requestCash(size_t cashToWithdraw)
 {
     std::cout << "We Don't Have Money" << std::endl;
 }
+
+std::string NoCash::toString()
+{
+    return "No Cash";
+}

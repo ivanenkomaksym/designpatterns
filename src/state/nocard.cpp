@@ -29,3 +29,8 @@ void NoCard::requestCash(size_t cashToWithdraw)
 {
     std::cout << "Enter a card first" << std::endl;
 }
+
+std::string NoCard::toString()
+{
+    return "No Card";
+}

@@ -14,6 +14,7 @@
 #include "iterator/iterator.h"
 #include "composite/composite.h"
 #include "state/state.h"
+#include "proxy/proxy.h"
 
 int main(int argc, char *argv[])
 {
@@ -31,5 +32,6 @@ int main(int argc, char *argv[])
     iteratorPattern();
     compositePattern();
     statePattern();
+    proxyPattern();
     return 0;
 }

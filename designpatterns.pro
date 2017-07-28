@@ -3,6 +3,7 @@ CONFIG += console c++14
 CONFIG += debug
 CONFIG -= app_bundle
 CONFIG -= qt
+QMAKE_CXXFLAGS += -std=c++0x
 
 SOURCES += main.cpp \
     src/strategy/animal.cpp \
@@ -49,7 +50,8 @@ SOURCES += main.cpp \
     src/state/hascard.cpp \
     src/state/nocard.cpp \
     src/state/haspin.cpp \
-    src/state/nocash.cpp
+    src/state/nocash.cpp \
+    src/proxy/atmproxy.cpp
 
 DISTFILES += \
     .gitignore \
@@ -154,4 +156,7 @@ HEADERS += \
     state/hascard.h \
     state/nocard.h \
     state/haspin.h \
-    state/nocash.h
+    state/nocash.h \
+    proxy/proxy.h \
+    proxy/getatmdata.h \
+    proxy/atmproxy.h

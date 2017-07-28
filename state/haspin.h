@@ -15,6 +15,7 @@ private:
     virtual void ejectCard() override;
     virtual void insertPin(size_t pinEntered) override;
     virtual void requestCash(size_t cashToWithdraw) override;
+    virtual std::string toString() override;
 
     ATMMachine &m_atmMachine;
 };

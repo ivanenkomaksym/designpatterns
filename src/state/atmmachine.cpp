@@ -75,3 +75,8 @@ size_t ATMMachine::getCashInMachine() const
 {
     return m_cashInMachine;
 }
+
+ATMState &ATMMachine::getATMData() const
+{
+    return *m_atmState;
+}

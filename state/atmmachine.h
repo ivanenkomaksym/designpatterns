@@ -2,12 +2,13 @@
 #define ATMMACHINE_H
 
 #include "state/atmstate.h"
+#include "proxy/getatmdata.h"
 
-class ATMMachine
+class ATMMachine : public GetATMData
 {
 public:
     explicit ATMMachine();
-    ~ATMMachine() = default;
+    virtual ~ATMMachine() = default;
 
     void setATMState(ATMState &newATMState);
     void setCashInMachine(size_t newCashInMachine);
@@ -23,7 +24,10 @@ public:
     ATMState &getNoCashState();
 
     void setCorrectPinEntered(bool correct);
-    size_t getCashInMachine() const;
+
+    // GetATMData interface
+    virtual size_t getCashInMachine() const override;
+    virtual ATMState &getATMData() const override;
 
 private:
     ATMState &m_hasCard;

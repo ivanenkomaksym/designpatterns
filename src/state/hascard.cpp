@@ -41,3 +41,8 @@ void HasCard::requestCash(size_t cashToWithdraw)
 {
     std::cout << "Enter PIN first" << std::endl;
 }
+
+std::string HasCard::toString()
+{
+    return "Has Card";
+}

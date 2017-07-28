@@ -47,3 +47,8 @@ void HasPin::requestCash(size_t cashToWithdraw)
         }
     }
 }
+
+std::string HasPin::toString()
+{
+    return "Has Pin";
+}
